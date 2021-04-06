@@ -1,0 +1,1 @@
+Weather App implementation as described by the Javascript course from The Odin Project. Fetches data from the openweathermap.org API. Icons by kickstandapps (https://github.com/kickstandapps/WeatherIcons).

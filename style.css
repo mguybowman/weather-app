@@ -1,0 +1,127 @@
+:root {
+    --text-color-secondary: #8bb9ff;
+    --background-color: #0f56b4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    background: var(--background-color);
+    color: white;
+    min-width: 320px;
+}
+
+main {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+#forecast {
+    margin: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#when {
+    color: var(--text-color-secondary);
+    margin-top: 8px;
+}
+
+#temperature {
+    margin-top: 8px;
+    display: flex;
+}
+
+#temp-number {
+    font-size: 128px;
+    line-height: 128px;
+    position: relative;
+    left: -4px;
+}
+
+#units {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 12px;
+    color: var(--text-color-secondary);
+}
+
+.active {
+    color: white;
+}
+
+.inactive {
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}
+
+.inactive:hover {
+    color: white;
+}
+
+#icon {
+    width: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 166%;
+    float: right;
+    margin-left: 16px;
+}
+
+#icon::before {
+    width: 0;
+    padding-bottom: 100%;
+    display: block;
+    content: "";
+}
+
+#condition {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+#humidity {
+    margin-top: 16px;
+}
+
+#humidity, #wind {
+    color: var(--text-color-secondary);
+    line-height: 1.25em;
+}
+
+#search {
+    display: flex;
+    padding: 0 32px 32px 32px;
+    justify-content: space-between;
+}
+
+#search-input, #search-button {
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+#search-input {
+    flex: 1;
+    margin-right: 16px;
+}
+
+#search-button {
+    cursor: pointer;
+}
+
+#error {
+    margin: 0 32px 32px 32px;
+}
