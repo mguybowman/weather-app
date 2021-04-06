@@ -27,7 +27,7 @@ let kelvin;
 function refresh(string) {
   const root = document.documentElement;
   const main = document.getElementsByTagName('main')[0];
-  let url = 'http://api.openweathermap.org/data/2.5/weather?q=';
+  let url = 'https://api.openweathermap.org/data/2.5/weather?q=';
   url += string;
   url += '&APPID=209daafaa67615e32e492416f4039224';
   fetch(url, { mode: 'cors' })
